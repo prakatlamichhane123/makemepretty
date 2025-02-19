@@ -1,0 +1,81 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Velvet Matte Lipstick",
+            "brand": "LuxeBeauty",
+            "category": "Lipstick",
+            "price": 15.99,
+            "shade": "Crimson Red",
+            "image": "velvet-matte-lipstick.jpg",
+            "description": "A long-lasting, highly pigmented matte lipstick for a bold look.",
+            "ingredients": [
+                "Beeswax",
+                "Vitamin E",
+                "Jojoba Oil"
+            ],
+            "rating": 4.8,
+            "reviews": 125,
+            "stock": 50
+        },
+        {
+            "id": 2,
+            "name": "Radiant Glow Foundation",
+            "brand": "Glowify",
+            "category": "Foundation",
+            "price": 24.99,
+            "shade": "Beige",
+            "image": "radiant-glow-foundation.jpg",
+            "description": "Lightweight foundation that provides a radiant, natural finish.",
+            "ingredients": [
+                "Aloe Vera",
+                "Hyaluronic Acid",
+                "SPF 20"
+            ],
+            "rating": 4.5,
+            "reviews": 98,
+            "stock": 30
+        },
+        {
+            "id": 3,
+            "name": "Smoky Eyeshadow Palette",
+            "brand": "ChicColors",
+            "category": "Eyeshadow",
+            "price": 29.99,
+            "shades": [
+                "Charcoal",
+                "Ash Grey",
+                "Midnight Black",
+                "Silver"
+            ],
+            "image": "smoky-eyeshadow-palette.jpg",
+            "description": "A versatile eyeshadow palette for bold and smoky looks.",
+            "ingredients": [
+                "Mica",
+                "Mineral Pigments",
+                "Shea Butter"
+            ],
+            "rating": 4.7,
+            "reviews": 215,
+            "stock": 20
+        },
+        {
+            "id": 4,
+            "name": "Natural Blush",
+            "brand": "PureGlam",
+            "category": "Blush",
+            "price": 12.49,
+            "shade": "Rosy Pink",
+            "image": "natural-blush.jpg",
+            "description": "A silky, buildable blush that gives a natural flush to your cheeks.",
+            "ingredients": [
+                "Talc",
+                "Rose Extract",
+                "Kaolin Clay"
+            ],
+            "rating": 4.6,
+            "reviews": 87,
+            "stock": 40
+        }
+    ]
+}

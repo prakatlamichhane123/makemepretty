@@ -1,0 +1,403 @@
+{
+    "products2": [
+      {
+        "id": 1,
+        "name": "Velvet Matte Lipstick",
+        "brand": "LuxeBeauty",
+        "category": "Lipstick",
+        "price": 15.99,
+        "shade": "Crimson Red",
+        "image": "velvet-matte-lipstick.jpg",
+        "description": "A long-lasting, highly pigmented matte lipstick for a bold look.",
+        "ingredients": ["Beeswax", "Vitamin E", "Jojoba Oil"],
+        "rating": 4.8,
+        "reviews": 125,
+        "stock": 50
+      },
+      {
+        "id": 2,
+        "name": "Radiant Glow Foundation",
+        "brand": "Glowify",
+        "category": "Foundation",
+        "price": 24.99,
+        "shade": "Beige",
+        "image": "radiant-glow-foundation.jpg",
+        "description": "Lightweight foundation that provides a radiant, natural finish.",
+        "ingredients": ["Aloe Vera", "Hyaluronic Acid", "SPF 20"],
+        "rating": 4.5,
+        "reviews": 98,
+        "stock": 30
+      },
+      {
+        "id": 3,
+        "name": "Smoky Eyeshadow Palette",
+        "brand": "ChicColors",
+        "category": "Eyeshadow",
+        "price": 29.99,
+        "shades": ["Charcoal", "Ash Grey", "Midnight Black", "Silver"],
+        "image": "smoky-eyeshadow-palette.jpg",
+        "description": "A versatile eyeshadow palette for bold and smoky looks.",
+        "ingredients": ["Mica", "Mineral Pigments", "Shea Butter"],
+        "rating": 4.7,
+        "reviews": 215,
+        "stock": 20
+      },
+      {
+        "id": 4,
+        "name": "Natural Blush",
+        "brand": "PureGlam",
+        "category": "Blush",
+        "price": 12.49,
+        "shade": "Rosy Pink",
+        "image": "natural-blush.jpg",
+        "description": "A silky, buildable blush that gives a natural flush to your cheeks.",
+        "ingredients": ["Talc", "Rose Extract", "Kaolin Clay"],
+        "rating": 4.6,
+        "reviews": 87,
+        "stock": 40
+      },
+      {
+        "id": 5,
+        "name": "Lash Boost Mascara",
+        "brand": "BoldLashes",
+        "category": "Mascara",
+        "price": 19.99,
+        "color": "Jet Black",
+        "image": "lash-boost-mascara.jpg",
+        "description": "A volumizing mascara that gives your lashes a dramatic boost.",
+        "ingredients": ["Carnauba Wax", "Biotin", "Vitamin B5"],
+        "rating": 4.9,
+        "reviews": 145,
+        "stock": 60
+      },
+      {
+        "id": 6,
+        "name": "Hydrating Lip Balm",
+        "brand": "SoftLips",
+        "category": "Lip Balm",
+        "price": 4.99,
+        "flavor": "Vanilla Mint",
+        "image": "hydrating-lip-balm.jpg",
+        "description": "A deeply hydrating lip balm to keep your lips soft and smooth.",
+        "ingredients": ["Shea Butter", "Coconut Oil", "Vitamin E"],
+        "rating": 4.8,
+        "reviews": 300,
+        "stock": 100
+      },
+      {
+        "id": 7,
+        "name": "Glitter Gel Eyeshadow",
+        "brand": "GlamShine",
+        "category": "Eyeshadow",
+        "price": 9.99,
+        "shade": "Golden Sparkle",
+        "image": "glitter-gel-eyeshadow.jpg",
+        "description": "A glitter-infused gel eyeshadow for dazzling eye looks.",
+        "ingredients": ["Silicone", "Mica", "Vitamin C"],
+        "rating": 4.4,
+        "reviews": 72,
+        "stock": 75
+      },
+      {
+        "id": 8,
+        "name": "Perfect Brow Kit",
+        "brand": "BrowMaster",
+        "category": "Eyebrow Kit",
+        "price": 18.99,
+        "shades": ["Dark Brown", "Taupe", "Ash Blonde"],
+        "image": "perfect-brow-kit.jpg",
+        "description": "An all-in-one kit for shaping and defining your brows.",
+        "ingredients": ["Wax", "Mineral Pigments", "Castor Oil"],
+        "rating": 4.6,
+        "reviews": 132,
+        "stock": 35
+      },
+      {
+        "id": 9,
+        "name": "High Shine Lip Gloss",
+        "brand": "Glossify",
+        "category": "Lip Gloss",
+        "price": 10.99,
+        "shade": "Rose Gold",
+        "image": "high-shine-lip-gloss.jpg",
+        "description": "A high-shine, non-sticky lip gloss for a glossy finish.",
+        "ingredients": ["Jojoba Oil", "Aloe Vera", "Vitamin E"],
+        "rating": 4.7,
+        "reviews": 200,
+        "stock": 60
+      },
+      {
+        "id": 10,
+        "name": "Silky Smooth Primer",
+        "brand": "SmoothBase",
+        "category": "Primer",
+        "price": 17.49,
+        "image": "silky-smooth-primer.jpg",
+        "description": "A lightweight primer that smooths skin for flawless makeup application.",
+        "ingredients": ["Silicone", "Vitamin C", "Green Tea Extract"],
+        "rating": 4.8,
+        "reviews": 89,
+        "stock": 40
+      },
+      {
+        "id": 11,
+        "name": "Dewy Glow Setting Spray",
+        "brand": "SetIt",
+        "category": "Setting Spray",
+        "price": 14.99,
+        "image": "dewy-glow-setting-spray.jpg",
+        "description": "A dewy setting spray that locks in makeup for a long-lasting glow.",
+        "ingredients": ["Hyaluronic Acid", "Cucumber Extract", "Rose Water"],
+        "rating": 4.9,
+        "reviews": 120,
+        "stock": 50
+      },
+      {
+        "id": 12,
+        "name": "Full Coverage Concealer",
+        "brand": "ConcealPro",
+        "category": "Concealer",
+        "price": 12.99,
+        "shade": "Ivory",
+        "image": "full-coverage-concealer.jpg",
+        "description": "A full-coverage concealer that hides blemishes and dark circles.",
+        "ingredients": ["Kaolin", "Vitamin E", "Chamomile Extract"],
+        "rating": 4.6,
+        "reviews": 150,
+        "stock": 30
+      },
+      {
+        "id": 13,
+        "name": "Natural Glow Highlighter",
+        "brand": "ShimmerLight",
+        "category": "Highlighter",
+        "price": 16.49,
+        "shade": "Champagne Pearl",
+        "image": "natural-glow-highlighter.jpg",
+        "description": "A soft highlighter that provides a radiant and natural glow.",
+        "ingredients": [
+            "Mica",
+            "Vitamin E",
+            "Coconut Oil"
+        ],
+        "rating": 4.8,
+        "reviews": 140,
+        "stock": 45
+    },
+    {
+        "id": 14,
+        "name": "Ultra Defining Contour Stick",
+        "brand": "SculptPro",
+        "category": "Contour",
+        "price": 19.99,
+        "shade": "Espresso",
+        "image": "ultra-defining-contour-stick.jpg",
+        "description": "A creamy contour stick for precise sculpting and definition.",
+        "ingredients": [
+            "Kaolin",
+            "Beeswax",
+            "Vitamin E"
+        ],
+        "rating": 4.7,
+        "reviews": 102,
+        "stock": 25
+    },
+    {
+        "id": 15,
+        "name": "All-Day Wear Liquid Eyeliner",
+        "brand": "PrecisionLine",
+        "category": "Eyeliner",
+        "price": 12.49,
+        "shade": "Intense Black",
+        "image": "all-day-wear-liquid-eyeliner.jpg",
+        "description": "A smudge-proof liquid eyeliner for sharp, bold lines.",
+        "ingredients": [
+            "Water",
+            "Charcoal Pigment",
+            "Aloe Vera"
+        ],
+        "rating": 4.9,
+        "reviews": 180,
+        "stock": 60
+    },
+    {
+        "id": 16,
+        "name": "Creamy Lip Crayon",
+        "brand": "ChicPout",
+        "category": "Lipstick",
+        "price": 9.99,
+        "shade": "Coral Sunset",
+        "image": "creamy-lip-crayon.jpg",
+        "description": "A smooth lip crayon with buildable color and a creamy finish.",
+        "ingredients": [
+            "Beeswax",
+            "Coconut Oil",
+            "Shea Butter"
+        ],
+        "rating": 4.6,
+        "reviews": 77,
+        "stock": 90
+    },
+    {
+        "id": 17,
+        "name": "Volumizing Lash Primer",
+        "brand": "BoldLashes",
+        "category": "Mascara Primer",
+        "price": 14.99,
+        "image": "volumizing-lash-primer.jpg",
+        "description": "A primer that enhances lash volume and length before mascara application.",
+        "ingredients": [
+            "Castor Oil",
+            "Carnauba Wax",
+            "Keratin"
+        ],
+        "rating": 4.5,
+        "reviews": 110,
+        "stock": 50
+    },
+    {
+        "id": 18,
+        "name": "Matte Finishing Powder",
+        "brand": "FlawlessBase",
+        "category": "Setting Powder",
+        "price": 11.99,
+        "shade": "Translucent",
+        "image": "matte-finishing-powder.jpg",
+        "description": "A lightweight setting powder for a matte finish and shine control.",
+        "ingredients": [
+            "Talc",
+            "Silica",
+            "Rice Powder"
+        ],
+        "rating": 4.7,
+        "reviews": 130,
+        "stock": 40
+    },
+    {
+        "id": 19,
+        "name": "Moisture Lock Tinted Moisturizer",
+        "brand": "HydraGlow",
+        "category": "Tinted Moisturizer",
+        "price": 18.49,
+        "shade": "Medium Tan",
+        "image": "moisture-lock-tinted-moisturizer.jpg",
+        "description": "A hydrating tinted moisturizer for sheer coverage and a natural glow.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "SPF 30",
+            "Green Tea Extract"
+        ],
+        "rating": 4.8,
+        "reviews": 90,
+        "stock": 35
+    },
+    {
+        "id": 20,
+        "name": "Glitter Liquid Lipstick",
+        "brand": "SparkleLips",
+        "category": "Lipstick",
+        "price": 13.99,
+        "shade": "Ruby Spark",
+        "image": "glitter-liquid-lipstick.jpg",
+        "description": "A glitter-infused liquid lipstick with a dazzling finish.",
+        "ingredients": [
+            "Mineral Pigments",
+            "Vitamin E",
+            "Coconut Oil"
+        ],
+        "rating": 4.5,
+        "reviews": 72,
+        "stock": 55
+    },
+    {
+        "id": 21,
+        "name": "Illuminating Makeup Base",
+        "brand": "RadiancePro",
+        "category": "Primer",
+        "price": 20.99,
+        "image": "illuminating-makeup-base.jpg",
+        "description": "A primer that enhances your skin's radiance while prepping for makeup.",
+        "ingredients": [
+            "Pearl Extract",
+            "Hyaluronic Acid",
+            "Vitamin C"
+        ],
+        "rating": 4.6,
+        "reviews": 88,
+        "stock": 45
+    },
+    {
+        "id": 22,
+        "name": "Sheer Tint Lip Oil",
+        "brand": "GlowLuxe",
+        "category": "Lip Oil",
+        "price": 7.99,
+        "shade": "Berry Bliss",
+        "image": "sheer-tint-lip-oil.jpg",
+        "description": "A moisturizing lip oil with a subtle tint for a healthy glow.",
+        "ingredients": [
+            "Argan Oil",
+            "Jojoba Oil",
+            "Vitamin E"
+        ],
+        "rating": 4.7,
+        "reviews": 160,
+        "stock": 70
+    },
+    {
+        "id": 23,
+        "name": "Bold & Bright Eyeliner Pencil",
+        "brand": "EyePop",
+        "category": "Eyeliner",
+        "price": 8.99,
+        "shade": "Electric Blue",
+        "image": "bold-bright-eyeliner-pencil.jpg",
+        "description": "A vibrant eyeliner pencil for bold and colorful looks.",
+        "ingredients": [
+            "Mineral Pigments",
+            "Beeswax",
+            "Aloe Vera"
+        ],
+        "rating": 4.4,
+        "reviews": 95,
+        "stock": 80
+    },
+    {
+        "id": 24,
+        "name": "Silky Smooth Lip Liner",
+        "brand": "PoutPerfect",
+        "category": "Lip Liner",
+        "price": 6.99,
+        "shade": "Nude Rose",
+        "image": "silky-smooth-lip-liner.jpg",
+        "description": "A creamy lip liner for precise application and definition.",
+        "ingredients": [
+            "Mineral Pigments",
+            "Shea Butter",
+            "Vitamin E"
+        ],
+        "rating": 4.6,
+        "reviews": 110,
+        "stock": 90
+    },
+    {
+        "id": 25,
+        "name": "Compact Mineral Blush",
+        "brand": "NaturalBeauty",
+        "category": "Blush",
+        "price": 14.49,
+        "shade": "Peach Glow",
+        "image": "compact-mineral-blush.jpg",
+        "description": "A mineral-based blush for a soft and buildable glow.",
+        "ingredients": [
+            "Mica",
+            "Rice Powder",
+            "Vitamin E"
+        ],
+        "rating": 4.8,
+        "reviews": 95,
+        "stock": 50
+    }
+    ]
+  }
+  
