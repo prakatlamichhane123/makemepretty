@@ -7,12 +7,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* box-shadow: 10px 10px 10px #f0b4dee8; */
+    box-shadow: 10px 10px 10px #f0b4dee8;
     font-family: "Poppins", serif;   
-    position: relative;
-    
-    /* animation: card-hover-animation 3s; */
-    /* animation: card-border-animation 3s; */
+    animation: card-hover-animation 3s;
     
     
 }  
@@ -40,18 +37,6 @@
         background-color: rgb(231, 117, 222);
     }
     
-
-
-}
-
-@keyframes card-border-animation{
-    0%{
-        
-    }
-    
-    100%{
-
-    }
 
 
 }

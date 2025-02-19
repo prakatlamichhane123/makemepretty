@@ -12,7 +12,7 @@ export default function Productcard(props) {
           src={imgadd}
           alt={props.imgAlt ? props.imgAlt : "Product Image"}
         />
-        <span className="product-name">{props.prodname}</span>
+        <span className="product-name">Perfume</span>
         <div className="product-extra-container">
           <Button>Buy</Button>
           <span className="product-favourite-btn">❤️</span>
