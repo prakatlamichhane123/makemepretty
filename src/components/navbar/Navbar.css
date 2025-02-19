@@ -1,0 +1,50 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-family: "Poppins", serif;    
+}
+ 
+.logo{
+    font-size: large;    
+} 
+
+.route-btn-container{
+    display: flex;
+    gap:35px;
+    font-size: large;
+}
+
+.home-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.explore-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.explore-eye{
+    position: relative;
+    top:-2.5px;
+}
+
+.favourite-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.cart-btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.extras-container{
+    display: flex;
+    gap:15px;
+    padding-right: 30px;
+    font-size: x-large;
+}
+
