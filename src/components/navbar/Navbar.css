@@ -1,8 +1,13 @@
 .nav-container{
     display: flex;
+    padding: 20px;
     justify-content: space-between;
-    margin: 20px;
     font-family: "Poppins", serif;    
+    align-items: center;
+    background-color: #f3bce1ea;
+    box-shadow: 5px 0px 5px rgba(204, 203, 203, 0.918);
+    position: sticky;
+    top:0;
 }
  
 .logo{
@@ -30,6 +35,16 @@
     top:-2.5px;
 }
 
+
+
+.extras-container{
+    display: flex;
+    gap:15px;
+    padding-right: 30px;
+    font-size: x-large;
+}
+
+
 .favourite-btn:hover{
     cursor: pointer;
     transform: scale(1.2);
@@ -41,10 +56,5 @@
 }
 
 
-.extras-container{
-    display: flex;
-    gap:15px;
-    padding-right: 30px;
-    font-size: x-large;
-}
+
 

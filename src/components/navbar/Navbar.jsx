@@ -19,11 +19,11 @@ export default function Navbar() {
             <span className="favourite-btn" onMouseOver={()=>setHeartHover(!heartHover)} onMouseOut={()=>setHeartHover(false)} >
                 {heartHover?"💜":"❤️"}
             </span>
-            
             <span className="cart-btn">🛒</span>
-
         </div>
+        
       </div>
+    
     </>
 
   );
