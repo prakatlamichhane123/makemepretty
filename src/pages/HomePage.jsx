@@ -7,7 +7,6 @@ import { products2 } from "../../public/biglist.json";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
       <div className="hero">
         <div className="search-bar">
           <input className="search-box" placeholder="Looking For Somthing ? 👀"/>
