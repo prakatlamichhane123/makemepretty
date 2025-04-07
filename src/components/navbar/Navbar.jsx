@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import  {useState}  from "react";
 
@@ -12,8 +13,8 @@ export default function Navbar() {
       <div className="nav-container">
         <span className="Logo">MakeMePretty 💅</span>
         <div className="route-btn-container">
-          <span className="home-btn">HOME&nbsp;🏠</span>
-          <span className="explore-btn"><span>EXPLORE</span></span>
+         <Link className='link-router' to={'/'}><span className="home-btn">HOME&nbsp;🏠</span></Link>
+         <Link className='link-router' to={'/explore'}>  <span className="explore-btn"><span>EXPLORE</span></span></Link>
         </div>
         <div className="extras-container">
             <span className="favourite-btn" onMouseOver={()=>setHeartHover(!heartHover)} onMouseOut={()=>setHeartHover(false)} >
