@@ -62,6 +62,10 @@
     cursor: pointer;
 }
 
+.link-router{
+    color: inherit;
+    text-decoration: inherit;
+}
 
 
 
