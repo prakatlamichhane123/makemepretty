@@ -1,7 +1,10 @@
-export default function LoginPage(){
+import LoginForm from '../components/loginform/LoginForm'
+import './LoginPage.css'
+
+export default function LoginPage() {
     return (
         <>
-        <div>This is Login Page</div>
+            <LoginForm/>
         </>
     )
 }

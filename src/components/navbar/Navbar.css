@@ -37,9 +37,8 @@
 }
 
 .explore-btn::after{
-    content: ' 😌';
+    content: '🧭';
     font-size: 20px;
-    animation: earth-animation 5s infinite linear;
 }
 
 
@@ -69,21 +68,3 @@
 
 
 
-@keyframes earth-animation{
-    0%{
-        
-    }
-
-    25%{
-        content: ' 🙂‍↔️';
-    }
-
-    50%{
-        content: ' 😪';
-    }
-    
-    75%{
-        content: ' 😴';
-       
-    }
-}
