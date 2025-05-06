@@ -1,4 +1,4 @@
-.login-form-container{
+.signup-form-container{
     display: flex;
     padding: 30px;
     margin: 10px;
@@ -29,7 +29,7 @@
 }
 
 
-.login-area{
+.signup-area{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -37,7 +37,7 @@
 }
 
 
-.login-input-field{
+.signup-input-field{
     border-style: none;
     padding: 10px;
     border-radius: 10px;
@@ -48,12 +48,12 @@
 }
 
 
-.login-input-field:focus{
+.signup-input-field:focus{
     border-style: none;
 }
 
 
-.login-btn{
+.signup-btn{
     border-radius: 10px;
     width: 26em;
     height: 3.5em;
@@ -64,30 +64,26 @@
     font-weight: bolder;
 }
 
-.login-btn:focus{
+.signup-btn:focus{
     cursor: pointer;
 }
 
 
-.util-signup-text{
+.util-login-text{
     font-size: 15px;
     color: grey;
 }
 
-.util-signup-btn{
+.util-login-btn{
     color: blue;
     text-decoration: none;
 }
-.util-signup-btn:focus{
+.util-login-btn:focus{
     cursor: pointer;
 }
 
-.forgot-password{
-    color: grey;
-    text-decoration: none;
-}
 
-/* .login-form-container{
+/* .signup-form-container{
     /* background-color: rgba(255, 255, 255, 0.171); */
     /* background-color: rgb(255, 0, 0); */
 /* } */

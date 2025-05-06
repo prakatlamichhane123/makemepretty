@@ -4,7 +4,7 @@ export default function LoginForm(prop) {
     return (
         <>
             <div className="login-form-container">
-                <div className="logo">LOGO!</div>
+                <div className="logo">Make-Me-Pretty</div>
                 <div className="welcome-text-container">
                     <span className="welcome-first">Welcome Back</span>
                     <span className="welcome-second">Please Login To Your Account</span>
@@ -13,7 +13,7 @@ export default function LoginForm(prop) {
                 <div className="login-area">
                     <input type="text" className='username-box login-input-field' name="username-box" id="username-box" placeholder='Username/Phone'/>
 
-                    <input type="text" className='password-box login-input-field' name="password-box" id="password-box" placeholder='Password'/>
+                    <input type="password" className='password-box login-input-field' name="password-box" id="password-box" placeholder='Password'/>
                     
                     <a href='#' className="forgot-password">Forgot password?</a>
                     
@@ -22,7 +22,7 @@ export default function LoginForm(prop) {
                 </div>
 
                 <div className="other-utils">
-                    <span className="signup-text">Dont Have Account ? <a href='#' className="signup-btn">Signup!</a></span>
+                    <span className="util-signup-text">Dont Have Account ? <a href='#' className="util-signup-btn">Signup!</a></span>
                 </div>
             </div>
         </>
