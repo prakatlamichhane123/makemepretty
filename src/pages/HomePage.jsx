@@ -1,5 +1,7 @@
 import "./HomePage.css";
-import Navbar from "../components/navbar/Navbar";
+import img1 from "../assets/img1.webp";
+import img2 from "../assets/img2.webp";
+import img3 from "../assets/img3.jpg";
 import Productcard from "../components/prodcard/Productcard";
 import { products } from "../../public/beautyprop.json";
 import { products2 } from "../../public/biglist.json";
@@ -8,7 +10,37 @@ export default function HomePage() {
   return (
     <>
       <div className="hero">
-        <div className="search-bar">
+
+          <div className="home-top-image-container">
+            <img className="top-image img1" src={img1} alt="" srcset="" />
+            <img className="top-image img2" src={img2} alt="" srcset="" />
+            <img className="top-image img3" src={img3} alt="" srcset="" />
+          </div>
+
+        <div className="info-text">Mega Discount Sale</div>
+        <div className="home-product-list-container">
+
+        <Productcard/>
+        <Productcard/>
+        <Productcard/>
+        <Productcard/>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <div className="search-bar">
           <input className="search-box" placeholder="Looking For Somthing ? 👀"/>
           <span className="search-emoji">🔍</span>
         </div>
@@ -36,7 +68,7 @@ export default function HomePage() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

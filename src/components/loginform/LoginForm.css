@@ -39,6 +39,7 @@
 
 .login-input-field{
     border-style: none;
+    background-color: #EAEAEA;
     padding: 10px;
     border-radius: 10px;
     width: 26em;

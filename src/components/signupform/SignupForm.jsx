@@ -6,12 +6,12 @@ export default function SignupForm(prop) {
             <div className="signup-form-container">
                 <div className="logo">Make-Me-Pretty</div>
                 <div className="welcome-text-container">
-                    <span className="welcome-first">Welco</span>
+                    <span className="welcome-first">Welcome</span>
                     <span className="welcome-second">Please Create Your Account!</span>
                 </div>
 
                 <div className="login-area">
-                    <input type="text" className='username-box signup-input-field' name="username-box" id="username-box" placeholder='Username/Phone'/>
+                    <input type="text" className='username-box signup-input-field' name="username-box" id="username-box" placeholder='Username / Email / Phone'/>
 
                     <input type="password" className='password-box signup-input-field' name="password-box" id="password-box" placeholder='Password'/>
                     <input type="password" className='password-box signup-input-field' name="retype-password-box" id="retypr-password-box" placeholder='Confirm Password'/>
