@@ -1,0 +1,12 @@
+.login-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    gap:7em;
+}
+
+.login-page-welcome-screen{
+    width: 42em;
+    height: 54em;
+}
