@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import img1 from "../assets/img1.webp";
 import img2 from "../assets/img2.webp";
-import img3 from "../assets/img3.jpg";
+import img3 from "../assets/img3.webp";
 import Productcard from "../components/prodcard/Productcard";
 import { products } from "../../public/beautyprop.json";
 import { products2 } from "../../public/biglist.json";
@@ -20,10 +20,22 @@ export default function HomePage() {
         <div className="info-text">Mega Discount Sale</div>
         <div className="home-product-list-container">
 
-        <Productcard/>
-        <Productcard/>
-        <Productcard/>
-        <Productcard/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+        <Productcard prodName="Roc Multi Correxion?" prodDescription="Hydrate & Plump Night Capsules" productPrice ="1,750" productDiscount ="3,500"/>
+
+     
         
         </div>
 
