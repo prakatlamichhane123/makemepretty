@@ -2,56 +2,34 @@
     width: 350px;
     height: 500px;
     border-radius: 10px;
-    background-color: rgba(243, 149, 220, 0.801);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /* box-shadow: 10px 10px 10px #f0b4dee8; */
     font-family: "Poppins", serif;   
-    position: relative;
-    
-    /* animation: card-hover-animation 3s; */
-    /* animation: card-border-animation 3s; */
-    
     
 }  
 
-
 .product-image{
     width: 320px;
-    height:320px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgb(185, 98, 235); 
+    height:320px;    
 }
 
-
-@keyframes card-hover-animation{
-    0%{
-        transform:perspective(450px) rotateY(0deg)  ;
-    }
-    
-    25%{
-        transform:perspective(450px)  rotateX(5deg) rotateY(5deg) rotateZ(-5deg) scale(1.1) ;
-        background-color: rgb(240, 143, 224);
-    }
-    50%{
-        transform:perspective(450px) rotateY(-30deg) ;
-        background-color: rgb(231, 117, 222);
-    }
-    
-
-
+.product-details{
+    font-weight: bolder;
+    margin-bottom: 15px;
+   
 }
 
-@keyframes card-border-animation{
-    0%{
-        
-    }
-    
-    100%{
+.product-pricing-details{
+    margin-right:100px ;
+}
+.product-price{
+    font-weight: bolder;
+    padding-right: 20px;
+}
+.product-discount{
+    font-weight: 500;
+    color:rgb(245, 170, 30);
+    text-decoration: line-through;
+}
 
-    }
-
-
+.add-cart-btn{
+    margin-left: 10px;
 }
