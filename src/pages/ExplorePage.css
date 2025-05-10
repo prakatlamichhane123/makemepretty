@@ -1,8 +1,19 @@
+ .explore-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px ;
+}  
 .search-bar {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 8%;
 }
 .search-box {
+  display: inline;
   background-color: rgb(211, 148, 240);
   border: none;
   border-radius: 10px;
@@ -12,7 +23,6 @@
   padding-right: 10px;
   font-size: large;
   overflow: hidden;
-  position: relative;
 }
 .search-bar::after {
   content: "";
@@ -20,36 +30,39 @@
   width: 3rem;
   height: 3rem;
   border-radius: 10px;
+  position: relative;
+  right: 60px;
   z-index: 2;
-  right: 0;
-
-  position: absolute;
 }
 .search-box:focus {
   outline: none;
 }
 .search-emoji {
   font-size: xx-large;
-  position: absolute;
-  right: 0;
+  right: 17px;
+  position: relative;
   z-index: 3;
 }
 
 .yml-container {
   margin-top: 40px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
 }
 .trending-container {
+  margin-top: 40px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
 }
 
 .yml-product-list {
   display: flex;
   gap: 40px;
   padding-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .yml-text {
@@ -58,4 +71,11 @@
 
 .trending-text {
   font-size: xx-large;
+}
+.trending-product-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
