@@ -16,7 +16,7 @@ export default function Navbar() {
          <NavLink className='link-router' to={'/explore'}>  <span className="explore-btn"><span>EXPLORE</span></span></NavLink>
         </div>
         <div className="extras-container">
-            <span className="cash">🎟️{cashamt}</span>
+            <span className="cash">🎟️<span className="cash-amt">{cashamt}</span></span>
             <span className="favourite-btn" onMouseOver={()=>setHeartHover(!heartHover)} onMouseOut={()=>setHeartHover(false)} >
                 {heartHover?"💜":"❤️"}
             </span>

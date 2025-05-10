@@ -17,6 +17,7 @@ export default function App() {
         <Route path='/signup' element={<SignupPage />} />
         <Route index element={<HomePage />} />
         <Route path='/explore' element={<ExplorePage />} />
+        <Route path='/admin' element={<AdminPage />} />
         <Route path='*' element={<PageNotFound/>} />
       </Route>
     )
