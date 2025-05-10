@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       <div className="nav-container">
-        <span className="Logo">MakeMePretty 💅</span>
+        <h2 className="Logo">MakeMePretty 🌸</h2>
         <div className="route-btn-container">
          <NavLink className='link-router' to={'/'}><span className="home-btn">HOME&nbsp;🏠</span></NavLink>
          <NavLink className='link-router' to={'/explore'}>  <span className="explore-btn"><span>EXPLORE</span></span></NavLink>

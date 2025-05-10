@@ -4,8 +4,8 @@ export default function SignupForm(prop) {
     return (
         <>
             <div className="signup-form-container">
-                <div className="logo">Make-Me-Pretty</div>
-                <div className="welcome-text-container">
+            <h2 className="logo">MakeMePretty 🌸</h2>
+            <div className="welcome-text-container">
                     <span className="welcome-first">Welcome</span>
                     <span className="welcome-second">Please Create Your Account!</span>
                 </div>

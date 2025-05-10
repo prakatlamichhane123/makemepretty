@@ -4,8 +4,8 @@ export default function LoginForm(prop) {
     return (
         <>
             <div className="login-form-container">
-                <div className="logo">Make-Me-Pretty</div>
-                <div className="welcome-text-container">
+            <h2 className="logo">MakeMePretty 🌸</h2>
+            <div className="welcome-text-container">
                     <span className="welcome-first">Welcome Back</span>
                     <span className="welcome-second">Please Login To Your Account</span>
                 </div>
