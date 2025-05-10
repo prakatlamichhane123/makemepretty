@@ -5,7 +5,7 @@ import  {useState}  from "react";
 
 export default function Navbar() {
     const [heartHover,setHeartHover]=useState(false);
-    
+    const cashamt=1000;
    
   return (
     <>
@@ -16,6 +16,7 @@ export default function Navbar() {
          <NavLink className='link-router' to={'/explore'}>  <span className="explore-btn"><span>EXPLORE</span></span></NavLink>
         </div>
         <div className="extras-container">
+            <span className="cash">🎟️{cashamt}</span>
             <span className="favourite-btn" onMouseOver={()=>setHeartHover(!heartHover)} onMouseOut={()=>setHeartHover(false)} >
                 {heartHover?"💜":"❤️"}
             </span>
