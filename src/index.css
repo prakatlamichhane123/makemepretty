@@ -3,8 +3,10 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "poppins", sans-serif;
 }
 
 body {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  background-color: rgb(253, 250, 243);
 }
