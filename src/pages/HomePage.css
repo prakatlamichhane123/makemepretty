@@ -13,10 +13,9 @@
   display: flex;
   gap: 30px;
 }
-.img2  {
+.img2 {
   width: 540px;
 }
-
 
 .info-text {
   padding-top: 30px;
@@ -33,13 +32,11 @@
   gap: 50px;
 }
 
-
-.top-image{
+.top-image {
   border-radius: 25px;
   animation: 20s ease-in-out;
 }
 
-.top-image:hover{
-  transform: scale(1.1)
+.top-image:hover {
+  transform: scale(1.1);
 }
-

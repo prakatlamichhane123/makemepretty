@@ -45,6 +45,8 @@
 
 .extras-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap:15px;
     padding-right: 30px;
     font-size: x-large;
@@ -65,6 +67,15 @@
     color: inherit;
     text-decoration: inherit;
 }
+
+.cash{
+
+    font-size: large;
+}
+/* .cash-amt{
+    font-size: medium;
+
+} */
 
 
 
