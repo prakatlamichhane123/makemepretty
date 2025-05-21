@@ -1,0 +1,27 @@
+.favourite-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favourite-list-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.favourites-upper-bar,
+.favourites-lower-bar {
+  border-top: 1px solid #000000;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.favourites-upper-bar {
+  margin-top: 10px;
+}
+.favourites-lower-bar {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}

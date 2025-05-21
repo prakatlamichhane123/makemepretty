@@ -4,7 +4,6 @@ import img2 from "../assets/img2.webp";
 import img3 from "../assets/img3.webp";
 import Productcard from "../components/prodcard/Productcard";
 
-
 export default function HomePage() {
   return (
     <>
