@@ -25,7 +25,7 @@ export default function SignupForm(prop) {
         inputData
       );
       console.log("Response:", response);
-      if (response.status === 200) {
+      if (response.data.status === true) {
         setError("Signup successful");
         console.log("Signup successful");
         navigate("/login");

@@ -1,7 +1,9 @@
 import "./ExplorePage.css";
 import Productcard from "../components/prodcard/Productcard";
+import LoginCheck from "../components/logincheck/LoginCheck";
 
 export default function ExplorePage() {
+  LoginCheck();
   return (
     <>
       <div className="explore-page-container">

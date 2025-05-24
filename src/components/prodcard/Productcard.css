@@ -30,6 +30,11 @@
     text-decoration: line-through;
 }
 
-.add-cart-btn{
-    margin-left: 10px;
+
+.product-favourite-btn{
+    display: inline-block;
+}
+.product-favourite-btn:hover{
+    transform: scale(2);   
+    cursor: pointer;
 }
