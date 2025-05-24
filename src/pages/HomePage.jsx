@@ -6,12 +6,14 @@ import Productcard from "../components/prodcard/Productcard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
+import LoginCheck from "../components/logincheck/LoginCheck";
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
   const [cookies] = useCookies(["token"]);
-
+  LoginCheck()
   useEffect(() => {
+    
     const fetchData = async () => {
       try {
         const response = await axios.get("http://127.0.0.1:8000/api/products", {
@@ -34,6 +36,9 @@ export default function HomePage() {
     };
     fetchData();
   }, []);
+
+
+ 
 
   return (
     <>

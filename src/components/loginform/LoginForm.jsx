@@ -22,14 +22,13 @@ export default function LoginForm(prop) {
         inputData
       );
       console.log("Response:", response);
-      if (response.status === 200) {
+      if (response.data.status === true) {
         setCookie("token", response.data.token, { path: "/" });
         setError("Login successful");
         console.log("Login successful");
         setTimeout(() => {
-          setMessage("This message appeared after 10 seconds!");
-        }, 10000);
-        navigate("/");
+          navigate("/");
+        }, 5000);
       } else {
         console.log("Login failed");
         setError("Invalid username or password");

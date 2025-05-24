@@ -7,7 +7,7 @@ export default function RootLayout(){
     
     
 
-    if((location.pathname).toLowerCase() == '/login' || (location.pathname).toLowerCase() == '/signup'){
+    if((location.pathname).toLowerCase() == '/login' || (location.pathname).toLowerCase() == '/signup' || (location.pathname).toLowerCase() == '/admin'){
         return (<Outlet/>) 
     }else{
         return (

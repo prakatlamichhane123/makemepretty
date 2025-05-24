@@ -1,8 +1,35 @@
 import "./Productcard.css";
 import img from "../../assets/prodimg.png";
-import Button from "../buttons/Button";
+import axios from "axios";
+import { Cookies } from "react-cookie";
 
 export default function Productcard(props) {
+  const cookies = new Cookies();
+  const data={
+    prodname:props.prodName,
+    proddesc:props.prodDescription,
+    prodimg:'img1',
+    price:props.productPrice
+  }
+   const clickHandler = async () => {
+      try {
+        const response =  await axios.post("http://127.0.0.1:8000/api/favourites",data, {
+          headers: {
+            Authorization: "Bearer " + cookies.token,
+            Accept: "application/json",
+          },
+        });
+        console.log("Response:", response);
+        if (response.status === 200) {
+          const data = response.data;
+          console.log("Data:", data);
+        } else {
+          console.log("Fetch Failed");
+        }
+      } catch (error) {
+        console.error("Error getting data:", error);
+      }
+  };
   return (
     <>
       <div className="product-card-container">
@@ -23,8 +50,7 @@ export default function Productcard(props) {
           </span>
           
           <span className="product-interact">
-            <span className="product-favourite-btn">❤️</span>
-            <span className="add-cart-btn">🛒</span>
+           <span className="product-favourite-btn" onClick={clickHandler} >❤️</span>
           </span>
          
         

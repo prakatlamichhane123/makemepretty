@@ -1,6 +1,7 @@
 import "./App.css";
 import ExplorePage from "./pages/ExplorePage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+
 import {
   Route,
   createBrowserRouter,
@@ -13,7 +14,8 @@ import RootLayout from "./layout/RootLayout.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
 import FavouritesPage from "./pages/FavouritesPage.jsx";
-import CartPage from "./pages/CartPage.jsx";
+import AddProducts from "./pages/AddProducts.jsx";
+import BuyPage from "./pages/buypage.jsx";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -25,7 +27,8 @@ export default function App() {
         <Route path="/explore" element={<ExplorePage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/favourite" element={<FavouritesPage />} />
-        <Route path="/cart" element={<CartPage />} />
+        <Route path="/addproduct" element={<AddProducts />} />
+        <Route path="/buy" element={<BuyPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     )
