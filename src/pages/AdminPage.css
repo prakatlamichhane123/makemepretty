@@ -1,72 +1,58 @@
-.admin-container{
+.admin-page-container{
+    height: 100vh;
     display: flex;
-    height: 100vh;
-    width: auto;
-    background-color: rgb(150, 149, 149);
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
 
-    
 }
-.admin-left-panel{
-    background-color: whitesmoke;
-    flex-grow: 1;
-    border: solid 1px grey;
+.home-page-btn{
+    position: fixed;
+    top:15px;
+    right: 20px;
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: x-large;
-}
-.admin-right-panel{
-    border: solid 1px grey;
-    flex-grow: 5;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.right-top-panel{
-    flex-grow: 1;
-    background-color: whitesmoke
-    ;display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-}
-.right-bottom-panel{
-    flex-grow: 8;
-    background-color: whitesmoke;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 20px;
-}
 
 
-
-.mmp-admin-text{
-    margin-top: 50px ;
-    
 }
-.admin-btns{
-    margin-top: 50px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-}
-
-.admin-button{
-    width: 200px;
-    padding: 15px;
-    background-color: aqua;
-    border-radius: 8px;
-}
-
-.admin-button:hover{
+.home-page-btn:hover{
     cursor: pointer;
-    
-    background-color: rgb(17, 194, 194);
-    box-shadow: 5px 5000px 5px  rgb(113, 143, 143);
+    color: white;
+    box-shadow: 0px 0px 5px 2px grey;
+
+
+}
+
+
+.admin-buttons{
+    display: flex;
+
+}
+
+.admn-btns{
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to right , rgb(170, 56, 236) ,rgb(175, 7, 167) ,rgb(173, 2, 122)) ;
+}
+
+.admn-btns:hover{
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 10px 5px grey;
+
 }

@@ -1,67 +1,76 @@
-import "./HomePage.css";
-import img1 from "../assets/img1.webp";
-import img2 from "../assets/img2.webp";
-import img3 from "../assets/img3.webp";
-import Productcard from "../components/prodcard/Productcard";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { useCookies } from "react-cookie";
-import LoginCheck from "../components/logincheck/LoginCheck";
-
+import Productcard from '../components/prodcard/Productcard';
+import './HomePage.css';
+import useGetRequest from '../hooks/useGetRequest'; 
+import { useEffect } from 'react';
 export default function HomePage() {
-  const [products, setProducts] = useState([]);
-  const [cookies] = useCookies(["token"]);
-  LoginCheck()
-  useEffect(() => {
-    
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("http://127.0.0.1:8000/api/products", {
-          headers: {
-            Authorization: "Bearer " + cookies.token,
-            Accept: "application/json",
-          },
-        });
-        console.log("Response:", response);
-        if (response.status === 200) {
-          const data = response.data;
-          console.log("Data:", data);
-          setProducts(data);
-        } else {
-          console.log("Fetch Failed");
-        }
-      } catch (error) {
-        console.error("Error getting data:", error);
-      }
-    };
-    fetchData();
-  }, []);
 
-
- 
-
+      const {data , hasError,errorMessage,isLoading,getRequest } = useGetRequest()
+      useEffect(()=>{
+         getRequest('products') 
+      },[]);
+     
   return (
-    <>
-      <div className="hero">
-        <div className="home-top-image-container">
-          <img className="top-image img1" src={img1} alt="" srcset="" />
-          <img className="top-image img2" src={img2} alt="" srcset="" />
-          <img className="top-image img3" src={img3} alt="" srcset="" />
-        </div>
+    
+    <div className="home-page-container">
 
-        <div className="info-text">Mega Discount Sale</div>
-        <div className="home-product-list-container">
-          {products.map((product) => (
-            <Productcard
-              key={product.id}
-              prodName={product.prodname}
-              prodDescription={product.proddesc}
-              productPrice={product.finalprice}
-              productDiscount={product.price}
-            />
-          ))}
-        </div>
+      <div className="home-page-welcome-container">
+          <div className="discover-your">Discover Your</div>
+          <div className="natural-beauty">Natural Beauty</div>
+          <div className="description-text">Premium beauty and cosmetic products curated for the modern woman.</div>
+          <div className="description-text">Enhance your natural radiance with our exclusive collection.</div>
+          <div className="home-page-welcome-buttons">
+              <button className="welcome-explore-button">Explore</button>
+              <button className="welcome-contactus-button">Contact Us</button>
+          </div>
+          <div className="home-catagorys-display">
+            <div className="home-catagory-text">
+                Shop By Catagory
+            </div>
+            <div className="catagories-container">
+            <div className="home-catagory-skincare ctg">
+              <div className="outer-circle">
+                <div className="inner-circle"></div>
+                </div>
+                <div className="cata-text">Skincare</div>
+            </div>
+            <div className="home-catagory-makeup ctg">
+              <div className="outer-circle">
+                <div className="inner-circle"></div>
+                </div>
+                <div className="cata-text">Makeup</div>
+            </div>
+            <div className="home-catagory-fragnance ctg">
+              <div className="outer-circle">
+                <div className="inner-circle"></div>
+                </div>
+                <div className="cata-text">Fragnance</div>
+            </div>
+            <div className="home-catagory-hair ctg">
+              <div className="outer-circle">
+                <div className="inner-circle"></div>
+                </div>
+                <div className="cata-text">Hair</div>
+            </div>
+           
+            </div>
+          </div>
+          <div className="products-container">
+
+
+          {
+            isLoading?<div className="loading">Loading......</div>:data.data.map((product) => ( <Productcard key={product.id} prodName={product.prodname} prodDescription={product.proddesc} productPrice={product.finalprice} productDiscount={product.price}/>))
+
+          }
+        
+             
+
+           
+            
+          </div>
+
+
       </div>
-    </>
+
+    </div>
   );
 }

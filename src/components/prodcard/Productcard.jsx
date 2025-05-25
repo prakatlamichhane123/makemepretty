@@ -1,60 +1,72 @@
 import "./Productcard.css";
 import img from "../../assets/prodimg.png";
-import axios from "axios";
 import { Cookies } from "react-cookie";
-
+import usePostRequest from "../../hooks/usePostRequest";
+import { useEffect } from "react";
 export default function Productcard(props) {
   const cookies = new Cookies();
-  const data={
+  const { data, hasError, errorMessage, isLoading, postRequest } = usePostRequest();
+
+  const data1={
     prodname:props.prodName,
     proddesc:props.prodDescription,
-    prodimg:'img1',
+    prodimg:props.imgSrc,
     price:props.productPrice
   }
-   const clickHandler = async () => {
-      try {
-        const response =  await axios.post("http://127.0.0.1:8000/api/favourites",data, {
-          headers: {
-            Authorization: "Bearer " + cookies.token,
-            Accept: "application/json",
-          },
-        });
-        console.log("Response:", response);
-        if (response.status === 200) {
-          const data = response.data;
-          console.log("Data:", data);
-        } else {
-          console.log("Fetch Failed");
-        }
-      } catch (error) {
-        console.error("Error getting data:", error);
-      }
-  };
+   const clickHandler =() => {
+     postRequest('favourite',data1);
+   }
+
   return (
     <>
       <div className="product-card-container">
-        <img
+        <div className="product-top-section">
+          <div className="product-insale">Sale</div>
+          <img
           className="product-image"
           src={img}
-          alt={props.imgAlt ? props.imgAlt : "Product Image"}
         />
+        </div>
 
-        <div className="product-details">
-          <div className="product-name">{props.prodName}</div>
-          <div className="product-description">{props.prodDescription}</div>
-          </div>  
+
+        <div className="product-bottom-section">
+          <div className="details-display">
+              <div className="product-catagory-display">Skincare</div>
+              <div className="product-name-display">{props.prodName}</div>
+              <div className="product-description-display">{props.prodDescription}</div>
+              <div className="product-price-display">RS.{props.productPrice}</div>
           
-          <span className="product-pricing-details">
-            <span className="product-price">Rs. {props.productPrice}</span>
-            <span className="product-discount">Rs.{props.productDiscount}</span>
-          </span>
-          
-          <span className="product-interact">
-           <span className="product-favourite-btn" onClick={clickHandler} >❤️</span>
-          </span>
-         
+          </div>
+          <div className="add-to-cart-btn">Add to Cart</div>
+        </div>
+
+       
         
+ 
       </div>
     </>
   );
 }
+
+//<span className="product-favourite-btn" onClick={clickHandler} >❤️</span>
+
+
+//  <div className="product-bottom-section">
+
+          
+//         <div className="product-details">
+//           <div className="product-name">{props.prodName}</div>
+//           <div className="product-description">{props.prodDescription}</div>
+//           </div>  
+          
+//           <span className="product-pricing-details">
+//             <span className="product-price">Rs. {props.productPrice}</span>
+//             <span className="product-discount">Rs.{props.productDiscount}</span>
+//           </span>
+          
+//           <span className="product-interact">
+//           </span>
+         
+       
+
+//         </div>
