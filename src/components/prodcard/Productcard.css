@@ -89,3 +89,25 @@
     cursor: pointer;
     color: white;
 }
+
+.see-details{
+    background:linear-gradient(to right ,#719ef3,#6972f3,#8471eb ) ;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.see-details:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+.product-card-utils{
+    display: flex;
+    gap:5px;
+    padding: 5px;
+}

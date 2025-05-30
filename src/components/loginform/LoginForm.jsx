@@ -28,7 +28,7 @@ export default function LoginForm(prop) {
         console.log("Login successful");
         setTimeout(() => {
           navigate("/");
-        }, 5000);
+        }, 1000);
       } else {
         console.log("Login failed");
         setError("Invalid username or password");
