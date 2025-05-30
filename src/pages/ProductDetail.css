@@ -1,0 +1,38 @@
+.product-detail-container{
+    margin: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+ .product-detail-left-side{
+
+  height: 300px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+ }
+
+
+.product-detail-right-side{
+    height: 300px;
+    gap: 5px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+.p-prod-title{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+.p-prod-price{
+    font-size: large;
+    font-weight: bolder;
+}

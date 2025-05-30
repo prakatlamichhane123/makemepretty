@@ -5,21 +5,13 @@ import useGetRequest from '../hooks/useGetRequest';
 
 export default function ExplorePage(){
     const [searchValue , setSearchValue] = useState("")
-//    const [isSearchClicked , setIsSearchClicked] = useState(false)
     const {data,hasError,errorMessage,isLoading,getRequest} = useGetRequest();
     console.log(searchValue)
-
-        // useEffect(()=>{
-        //      getRequest('products') 
-        //   },[isSearchClicked]);
 
         useEffect(()=>{
             getRequest('search?search='+searchValue);
         },[searchValue])
-        //   const clickHandler = ()=>{
-                
-                
-          //}
+      
 
 
           return(
@@ -36,19 +28,13 @@ export default function ExplorePage(){
                  onChange={(e)=>setSearchValue(e.target.value)}  
                  />
                 
-                {/* <button 
-                type="button" 
-                name='search-btn' 
-                className='search-btn' 
-                onClick={clickHandler}
-                >Search</button>     */}
              </div>
         
         
             <div className="products-display">
                   {
-                            isLoading?<div className="loading">Loading......</div>:data?.data.map((product) => (
-<Productcard key={product.id} prodName={product.prodname} prodDescription={product.proddesc} productPrice={product.finalprice} productDiscount={product.price}/>
+                            isLoading?<div className="loading">Loading......</div>:data?.data.map((product,i) => (
+<Productcard key={i} id={product.id} prodName={product.prodname} prodDescription={product.proddesc} productPrice={product.price} catagory={product.catagory}/>
                             ))
                              
                                 

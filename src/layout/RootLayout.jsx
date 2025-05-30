@@ -8,7 +8,7 @@ export default function RootLayout(){
     const location = useLocation();
 
 
-    if((location.pathname).toLowerCase() == '/login' || (location.pathname).toLowerCase() == '/signup' || (location.pathname).toLowerCase() == '/admin'){
+    if((location.pathname).toLowerCase() == '/login' || (location.pathname).toLowerCase() == '/signup' || (location.pathname).toLowerCase() == '/admin'|| (location.pathname).toLowerCase() == '/addproduct'){
         return (<Outlet/>) 
     }else{
         return (

@@ -1,0 +1,36 @@
+.cart-container{
+    margin-top:150px;
+    margin-left:50px;
+}
+.cart-buy-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.c-b-container{
+    background-color: orange;
+    width: 15%;
+    height: 150px;
+    display: flex;
+    margin-right: 20px;
+    /* padding-right: 20px;
+    padding-bottom: 20px; */
+    padding: 50px;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-cart-btn-cart{
+    width: 30%;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+}
